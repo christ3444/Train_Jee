@@ -37,10 +37,7 @@ public class Test extends HttpServlet {
 		auteur.setNom("DEV");
 		
 		
-		
-		String client = "Dr DEV christ" ;
-		
-		request.setAttribute("client", client);
+		request.setAttribute("auteur", auteur);
 		 this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
 	//	response.getWriter().append("/WEB-INF/bonjour.jsp").append(request.getContextPath());
 	}
