@@ -27,6 +27,9 @@ public class Acceuil extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		String name = request.getParameter("name");
+		request.setAttribute("name", name);
 		 this.getServletContext().getRequestDispatcher("/WEB-INF/acceuil.jsp").forward(request, response);
 	}
 
