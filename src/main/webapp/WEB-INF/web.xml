@@ -8,4 +8,15 @@
     <servlet-name>Test</servlet-name>
     <url-pattern>/bonjour</url-pattern>
   </servlet-mapping>
+  
+  <!--ACCEUIL SERVLET  -->
+  
+    <servlet>
+    <servlet-name>Acceuil</servlet-name>
+    <servlet-class>com.exemple.servlet.Acceuil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Acceuil</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
 </web-app>
