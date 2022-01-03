@@ -29,7 +29,9 @@ public class Acceuil extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		String name = request.getParameter("name");
+		String age = request.getParameter("age");
 		request.setAttribute("name", name);
+		request.setAttribute("age", age);
 		 this.getServletContext().getRequestDispatcher("/WEB-INF/acceuil.jsp").forward(request, response);
 	}
 

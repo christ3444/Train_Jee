@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.exemple.beans.Auteur;
+
 /**
  * Servlet implementation class Test
  */
@@ -28,6 +30,13 @@ public class Test extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		Auteur auteur = new Auteur();
+		
+		auteur.setPrenom("mathieu");
+		auteur.setNom("DEV");
+		
+		
 		
 		String client = "Dr DEV christ" ;
 		

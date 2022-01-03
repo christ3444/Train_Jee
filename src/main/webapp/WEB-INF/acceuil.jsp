@@ -6,10 +6,8 @@
 	
 	
 	<img src="asset/img/icon.jpg"/>
-	<% String name = (String) request.getAttribute("name"); %>
 	
-	
-	<p> nous somme dans acceuil avec monsieur <% out.println(name); %> </p>
+	<h2>  nous somme dans acceuil avec monsieur ${ empty name ? '' : name }  agee de ${ age } ans </h2>
 
 </body>
 </html>
