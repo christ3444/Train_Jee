@@ -1,6 +1,7 @@
 package com.exemple.servlet;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,6 +28,10 @@ public class Test extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		
+		String client = "Dr DEV christ" ;
+		
+		request.setAttribute("client", client);
 		 this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
 	//	response.getWriter().append("/WEB-INF/bonjour.jsp").append(request.getContextPath());
 	}

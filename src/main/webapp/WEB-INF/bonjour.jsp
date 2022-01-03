@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<h1> bonjour jsp </h1>
+<h1> bonjour <% String client = (String ) request.getAttribute("client") ;
+out.println(client);%> </h1>
 
 </body>
 </html>
