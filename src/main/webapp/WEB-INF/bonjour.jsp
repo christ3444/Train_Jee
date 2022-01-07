@@ -12,5 +12,11 @@
 
 <c:set target="${ auteur }" property="nom" value="Nouveau DEV"/>
 <c:out value="${ auteur.nom }"/>
+
+
+<c:if test="${ 10==10 }" var="time" >
+10:10
+</c:if> 
+
 </body>
 </html>

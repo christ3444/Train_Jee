@@ -11,5 +11,6 @@
 <body>
 <ul>
 	<li>page 1</li>
-	<li> <a href="/acceil"> Acceuil </a> </li>
+	<li> <a href="/test/acceil"> Acceuil </a> </li>
+	<li> <a href="/test/bonjour"> Bonjour </a> </li>
 </ul>
