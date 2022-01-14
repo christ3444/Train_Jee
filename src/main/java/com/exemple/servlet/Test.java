@@ -46,11 +46,14 @@ public class Test extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String nom = request.getParameter("nom");
+        
+    	String nom = request.getParameter("nom");
         
         request.setAttribute("nom", nom);
+    	doGet(request, response);
         
-        this.getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
+        //getServletContext().getRequestDispatcher("/WEB-INF/bonjour.jsp").forward(request, response);
+        
     }
 
 }
