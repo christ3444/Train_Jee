@@ -26,11 +26,17 @@
 </c:choose>
 -->
 
-    <c:if test="${ !empty nom }"><p><c:out value="Bonjour, vous vous appelez ${ nom }" /></p></c:if>
+    <c:if test="${ !empty form.resultat }"><p><c:out value=" ${  form.resultat }" /></p></c:if>
         
         <form method="post" action="bonjour">
-            <label for="nom">Nom : </label>
+        <p>
+            <label for="nom">Login : </label>
             <input type="text" name="nom" id="nom" />
+        </p>
+        <p>
+          <label for="nom">Password : </label>
+            <input type="password" name="pass" id="pass" />
+        </p>
             
             <input type="submit" />
         </form>
